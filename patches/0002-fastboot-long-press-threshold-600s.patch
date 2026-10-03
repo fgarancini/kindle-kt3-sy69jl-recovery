@@ -1,0 +1,13 @@
+diff --git a/board/freescale/mx6sl_heisenberg/pmic_rohm.c b/board/freescale/mx6sl_heisenberg/pmic_rohm.c
+index 8f0c59e..790dd67 100644
+--- a/board/freescale/mx6sl_heisenberg/pmic_rohm.c
++++ b/board/freescale/mx6sl_heisenberg/pmic_rohm.c
+@@ -292,7 +292,7 @@ int pmic_read_rtc_time(struct rtc_time* tm) {
+  * Use will need to hold the power button trigger a reset for a total of
+  * LP_FASTBOOT_MAX_CNT times and each time within LP_FASTBOOT_THRESHOLD seconds
+  */
+-#define LP_FASTBOOT_THRESHOLD   15 /* wait time between resets in seconds */
++#define LP_FASTBOOT_THRESHOLD   600 /* wait time between resets in seconds */
+ #define LP_FASTBOOT_MAX_CNT     2  /* number of resets require to go fastboot */
+ 
+ static int get_lp_press_time(void)

@@ -1,0 +1,2 @@
+# The compiled binary goes in a GitHub Release, not in the git history
+release-assets/*.imx
